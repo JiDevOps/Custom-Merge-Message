@@ -1,0 +1,16 @@
+{
+    "name": "Custom Merge Message",
+    "description": "Use custom message template for merge message",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": {
+		"128": "icon.png"
+	},
+    "content_scripts": [
+        {
+            "matches": [ "https://github.com/*" ],
+            "run_at": "document_end",
+            "js": [ "content.js" ]
+        }
+    ]
+}
